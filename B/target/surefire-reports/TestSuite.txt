@@ -1,0 +1,21 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 36.677 s <<< FAILURE! - in TestSuite
+testTitle(com.testscripts.TestTitle)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: expected [Welcome to simple travel agency] but found [BlazeDemo]
+	at com.testscripts.TestTitle.testTitle(TestTitle.java:25)
+
+testpurchaseTicket(com.testscripts.TestTitle)  Time elapsed: 16.799 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//td[contains(text(),'ts.first()')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bf625c66c2798b85180dbc35196a2897, findElement {using=xpath, value=//td[contains(text(),'ts.first()')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\sange\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52763}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52763/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf625c66c2798b85180dbc35196a2897
+	at com.testscripts.TestTitle.testpurchaseTicket(TestTitle.java:69)
+
