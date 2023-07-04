@@ -20,7 +20,7 @@ import com.pageobjectmodel.PurchasePage;
 import com.pageobjectmodel.SelectFlightPage;
 
 public class TestTitle extends BaseClass {
-	@Test
+	@Test(priority = 1)
 	public void testTitle() {
 
 		String atitle = driver.getTitle();
@@ -31,7 +31,7 @@ public class TestTitle extends BaseClass {
 
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void testNavigationandLink() throws InterruptedException
 	{
 		HomePage hp= new HomePage(driver);
@@ -43,7 +43,7 @@ public class TestTitle extends BaseClass {
 		driver.navigate().back();
 		
 	}
-	@Test
+	@Test(priority = 3)
 	public void testpurchaseTicket() throws InterruptedException
 	{
 		HomePage hp= new HomePage(driver);
