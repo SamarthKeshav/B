@@ -11,6 +11,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import com.generic.BaseClass;
@@ -61,13 +62,15 @@ public class TestTitle extends BaseClass {
 		
 		SelectFlightPage sfp= new SelectFlightPage(driver);
 		
+		Reporter.log("HI",true);
+		
 		List<WebElement> prices = sfp.getPrices();
 		
 		TreeSet<Double> ts= new TreeSet<Double>();
 		for(WebElement price:prices)
 		{
 			String p = price.getText().replaceAll("[^0-9.]","");
-			ts.add((Double.valueOf(p)));			//convert string to double by using wrapper class
+			ts.add((Double.valueOf(p)));			//convert  JI string to double by using wrapper class
 		}
 		
 		//System.out.println(ts.first());
